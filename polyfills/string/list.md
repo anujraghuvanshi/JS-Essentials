@@ -1,4 +1,4 @@
-Here's all functions of string for which Polyfills are written
+Here's all functions of string for which Polyfills will be written
 
 1. String.prototype.at()
 2. String.prototype.charAt()
