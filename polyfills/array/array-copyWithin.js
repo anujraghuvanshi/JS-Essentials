@@ -6,14 +6,14 @@ Array.prototype.myCopyWithin = function (target = 0, start = 0, end = this.lengt
     throw new Error('Array.prototype.myCopyWithin must be called on array')
   }
 
-  let O = Object(this);
-  let len = O.length >>> 0;
-  let relativeTarget = target >> 0;
-  let to = relativeTarget < 0 ? Math.max(len + relativeTarget, 0) : Math.min(relativeTarget, len);
-  let relativeStart = start >> 0;
+  const O = Object(this);
+  const len = O.length >>> 0;
+  const relativeTarget = target >> 0;
+  const relativeStart = start >> 0;
+  const relativeEnd = end === undefined ? len : end >> 0;
+  const final = relativeEnd < 0 ? Math.max(len + relativeEnd, 0) : Math.min(relativeEnd, len);
   let from = relativeStart < 0 ? Math.max(len + relativeStart, 0) : Math.min(relativeStart, len);
-  let relativeEnd = end === undefined ? len : end >> 0;
-  let final = relativeEnd < 0 ? Math.max(len + relativeEnd, 0) : Math.min(relativeEnd, len);
+  let to = relativeTarget < 0 ? Math.max(len + relativeTarget, 0) : Math.min(relativeTarget, len);
 
   let count = Math.min(final - from, len - to);
   let direction = 1;
