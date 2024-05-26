@@ -1,8 +1,8 @@
 const myArray = [5, 12, 130, 50, 44];
 
-Array.prototype.myFindLast = function (callback) {
+Array.prototype.myFindLastIndex = function (callback) {
   if (!Array.isArray(this)) {
-    throw new Error('Array.prototype.myFindLast must be called on array')
+    throw new Error('Array.prototype.myFindLastIndex must be called on array')
   }
 
   if (typeof callback !== 'function') {
@@ -11,12 +11,12 @@ Array.prototype.myFindLast = function (callback) {
 
 
   for (let i = this.length; i > 0; i--) {
-    if (callback(this[i], i, this)) return this[i]
+    if (callback(this[i], i, this)) return i
   }
 
 }
 
-const result = myArray.myFindLast(v => v > 45)
+const result = myArray.myFindLastIndex(v => v > 45)
 
 // Output here 
 console.log('result => \n', result)
