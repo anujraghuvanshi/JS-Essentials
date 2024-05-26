@@ -9,7 +9,6 @@ Array.prototype.myFindLastIndex = function (callback) {
     throw new Error('callback must be a function')
   }
 
-
   for (let i = this.length; i > 0; i--) {
     if (callback(this[i], i, this)) return i
   }
