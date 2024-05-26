@@ -17,7 +17,6 @@ Array.prototype.myFlat = function (depth = 1) {
     }
   })(this, depth)
 
-
   return newArray
 }
 
