@@ -1,7 +1,7 @@
 const myArray = [5, 12, 130, 50, 44];
 
 Array.prototype.myIncludes = function (value) {
-  for (let i = this.length; i > 0; i--) {
+  for (let i = 0; i < this.length; i++) {
     if (this[i] === value) return true
   }
 
