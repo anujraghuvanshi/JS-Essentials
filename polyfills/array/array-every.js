@@ -5,6 +5,9 @@ Array.prototype.myEvery = function (callback) {
     throw new Error('Array.prototype.myEvery must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   for (let i = 0; i < this.length; i++) {
     if (!callback(this[i])) return false
   }

@@ -4,6 +4,10 @@ Array.prototype.myConcat = function () {
   if (!Array.isArray(this)) {
     throw new Error('Array.prototype.myConcat must be called on array')
   }
+
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   let newArray = [];
 
   for (let i = 0; i < this.length; i++) {

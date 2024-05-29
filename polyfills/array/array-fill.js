@@ -5,6 +5,9 @@ Array.prototype.myFill = function (value = undefined, start = 0, end = 0) {
     throw new Error('Array.prototype.myFill must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   if (start < 0) {
     start = start + this.length
   }

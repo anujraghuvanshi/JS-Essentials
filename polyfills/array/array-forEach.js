@@ -5,6 +5,9 @@ Array.prototype.myForEach = function (callback) {
     throw new Error('Array.prototype.myForEach must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   if (typeof callback !== 'function') {
     throw new Error('callback must be a function')
   }

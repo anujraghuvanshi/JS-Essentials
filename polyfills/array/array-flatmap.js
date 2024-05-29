@@ -5,6 +5,9 @@ Array.prototype.myFlatMap = function (callback) {
     throw new Error('Array.prototype.myFlatMap must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   let result = []
   for (let i = 0; i < this.length; i++) {
     const cbResult = callback(this[i], i, this)

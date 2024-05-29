@@ -6,6 +6,10 @@ Array.prototype.myCopyWithin = function (target = 0, start = 0, end = this.lengt
     throw new Error('Array.prototype.myCopyWithin must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
+
   const O = Object(this);
   const len = O.length >>> 0;
   const relativeTarget = target >> 0;

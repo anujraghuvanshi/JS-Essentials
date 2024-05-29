@@ -9,6 +9,9 @@ Array.prototype.myFindIndex = function (callback) {
     throw new Error('callback must be a function')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   for (let i = 0; i < this.length; i++) {
     if (callback(this[i], i, this)) return i
   }

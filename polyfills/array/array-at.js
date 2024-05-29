@@ -5,6 +5,9 @@ Array.prototype.myAt = function (index) {
     throw new Error('Array.prototype.myAt must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   if (index >= 0) {
     return this[index]
   }

@@ -5,6 +5,9 @@ Array.prototype.myLastIndexOf = function (value, fromIndex = this.length - 1) {
     throw new Error('Array.prototype.myLastIndexOf must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   for (let i = fromIndex; i >= 0; i--) {
     if (this[i] === value) return i
   }

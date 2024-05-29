@@ -5,6 +5,9 @@ Array.prototype.myEntries = function (index) {
     throw new Error('Array.prototype.myEntries must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   const iteratorArray = this.map((item, index) => [index, item])
 
   function* iterator() {
