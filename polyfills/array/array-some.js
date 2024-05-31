@@ -1,9 +1,9 @@
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-Array.prototype.myMap = function (callback, ...args) {
+Array.prototype.mySome = function (callback) {
   // Throw Error if function is not called on array.
   if (!Array.isArray(this)) {
-    throw new Error('Array.prototype.myMap must be called on array')
+    throw new Error('Array.prototype.mySome must be called on array')
   }
   // Throw Error if callback is not a function
   if (typeof callback !== 'function') {
@@ -13,15 +13,13 @@ Array.prototype.myMap = function (callback, ...args) {
   /**
    * ORIGINAL LOGIC STARTS HERE
    */
-  let resultOutput = []
   for (i = 0; i < this.length; i++) {
-    const res = callback.call(args[0], this[i], i, this);
-    resultOutput.push(res)
+    if (callback(this[i])) return true
   }
-  return resultOutput;
+  return false;
 }
 
-const result = myArray.myMap(value => value * 2)
+const result = myArray.mySome(value => value === 2)
 
 // Output here 
 console.log('result => \n', result)

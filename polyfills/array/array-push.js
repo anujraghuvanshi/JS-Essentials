@@ -4,6 +4,10 @@ Array.prototype.myPush = function () {
   if (!Array.isArray(this)) {
     throw new Error('Array.prototype.myPush must be called on array')
   }
+
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   for (let i = 0; i < arguments.length; i++) {
     this[this.length] = arguments[i];
   }

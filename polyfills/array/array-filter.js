@@ -9,6 +9,9 @@ Array.prototype.myFilter = function (callback, ...args) {
     throw new Error('Callback must be a function')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   let resultOutput = []
   for (i = 0; i < this.length; i++) {
     const res = callback.call(args, this[i], i, this);

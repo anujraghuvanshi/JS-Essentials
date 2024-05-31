@@ -5,6 +5,9 @@ Array.prototype.myFlat = function (depth = 1) {
     throw new Error('Array.prototype.myFlat must be called on array')
   }
 
+  /**
+   * ORIGINAL LOGIC STARTS HERE
+   */
   let newArray = [];
 
   (function flatten(array, depth) {
