@@ -29,7 +29,7 @@ Here's all functions of array for which Polyfills are written
 27. Array.prototype.slice()
 28. Array.prototype.some()
 29. Array.prototype.sort()
-30. Array.prototype.slice()
+30. Array.prototype.splice()
 31. Array.prototype.toLocaleString()
 32. Array.prototype.toReversed()
 33. Array.prototype.toSorted()
