@@ -21,6 +21,8 @@ Array.prototype.mySplice = function () {
 
   if (arguments.length > 1) {
     itemsToDelete = arguments[1]
+  } else {
+    itemsToDelete = this.length - start
   }
 
   if (arguments.length > 2) {
