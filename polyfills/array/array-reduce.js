@@ -12,7 +12,7 @@ Array.prototype.myReduce = function (cb, initialValue) {
   let result;
   let startIndex = 0;
 
-  if (!initialValue) {
+  if (arguments.length <= 1) {
     result = this[0]
     startIndex = 1
   }
@@ -21,7 +21,7 @@ Array.prototype.myReduce = function (cb, initialValue) {
     result = initialValue
   }
 
-  for (i = 0; i < this.length; i++) {
+  for (i = startIndex; i < this.length; i++) {
     result = cb(result, this[i])
   }
 
