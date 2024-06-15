@@ -10,10 +10,10 @@ function defaultComparator(a, b) {
   return 0;
 }
 
-Array.prototype.mySort = function (cb = defaultComparator) {
+Array.prototype.myToSorted = function (cb = defaultComparator) {
   // Throw Error if function is not called on array.
   if (!Array.isArray(this)) {
-    throw new Error('Array.prototype.mySort must be called on array')
+    throw new Error('Array.prototype.myToSorted must be called on array')
   }
 
   /**
@@ -33,7 +33,7 @@ Array.prototype.mySort = function (cb = defaultComparator) {
   return array;
 }
 
-const result = myArray.mySort()
+const result = myArray.myToSorted()
 
 // Output here 
 console.log('result => \n', result)
