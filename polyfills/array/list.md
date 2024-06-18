@@ -39,3 +39,4 @@ Here's all functions of array for which Polyfills are written
 37. Array.prototype.with()
 38. Array.prototype.from()
 39. Array.prototype.fromAsync()
+40. Array.prototype.reverse()
