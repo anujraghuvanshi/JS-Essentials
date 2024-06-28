@@ -6,7 +6,7 @@ Number.myParseInt = function (str, radix) {
   }
 
   if (str) {
-    var result = parseInt(str, radix);
+    const result = parseInt(str, radix);
     return isNaN(result) ? NaN : result;
   }
 
