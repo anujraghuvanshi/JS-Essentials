@@ -23,6 +23,15 @@
 - [JS Tricks 🤯 ](https://github.com/denysdovhan/wtfjs) - Uncover quirky and fascinating JavaScript tricks.
 - [Algorithms 💻 ](https://the-algorithms.com/language/javascript) - Sharpen your problem-solving skills with JavaScript algorithms.
 - [Algorithms with Animations 💻 ](https://visualgo.net/en) - Visualize algorithms and data structures in action.
+- [Best 10 Github Repo](https://gaelgthomas.com/10-github-repositories-you-should-know-as-a-javascript-developer) - 10 GitHub Repositories You Should Know as a JavaScript Developer.
+- [You don't know JS](https://github.com/getify/You-Dont-Know-JS) - Series of books diving deep into the core mechanisms of the JavaScript language.
+- [Clean code Javascript 🛁](https://github.com/ryanmcdermott/clean-code-javascript) - Clean Code concepts adapted for JavaScript.
+- [30 days of Javascript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - 30 days of JavaScript programming challenge.
+- [JS Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) - Cheatsheet for the JavaScript knowledge you will frequently encounter in modern projects.
+
+### 🚢 Testing
+
+- [JS testing best practices 📗](https://github.com/goldbergyoni/javascript-testing-best-practices) - Comprehensive and exhaustive JavaScript & Node.js testing best practices (July 2023).
 
 ### 💡 Interview Questions
 
